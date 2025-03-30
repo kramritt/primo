@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Apology</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('assets/apology-bg.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Georgia', serif;
+    }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .apology-box {
+      max-width: 600px;
+      padding: 2rem;
+      background: white;
+      border-radius: 1.5rem;
+      box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+      text-align: center;
+    }
+    .apology-box h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .apology-box p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="assets/apology-music.mp3" type="audio/mpeg">
+  </audio>
+  <div class="overlay">
+    <div class="apology-box">
+      <h1>I'm truly sorry.</h1>
+      <p>I messed up by making inappropriate and hurtful comments. I now realize how disrespectful and dehumanizing it was, and I deeply regret it. I'm learning, growing, and I hope one day you'll forgive me. You didn’t deserve that, and I promise to be better.</p>
+    </div>
+  </div>
+</body>
+</html>
